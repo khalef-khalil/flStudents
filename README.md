@@ -1,16 +1,73 @@
-# fl_students
+# Student Management App
 
-A new Flutter project.
+A Flutter application for managing student information, grades, and attendance.
+
+## Features
+
+- **Professor Portal**
+  - View list of all students
+  - Add/Edit student information
+  - View class average and individual student averages
+  - View detailed grades by subject for each student
+  - Secure login system
+
+- **Student Portal**
+  - Personal dashboard
+  - View personal grades and averages
+  - View class ranking
+  - Subject-wise grade breakdown
+  - Secure login system
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
+- Android Studio / Xcode (for running on devices/emulators)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+git clone https://github.com/khalef-khalil/flStudents.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd flStudents
+```
+
+3. Install dependencies:
+```bash
+flutter pub get
+```
+
+4. Run the app:
+```bash
+flutter run
+```
+
+### Default Login Credentials
+
+- **Professor Login:**
+  - Username: prof
+  - Password: pass
+
+- **Student Login:**
+  - Student ID: (As registered in the system)
+  - Password: (As set during registration)
+
+## Technologies Used
+
+- Flutter
+- SQLite (local database)
+- Provider (state management)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License.
