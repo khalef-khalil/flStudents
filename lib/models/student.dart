@@ -4,6 +4,8 @@ class Student {
   final String lastName;
   final String studentId;
   final String password;
+  final String? email;
+  final String? phone;
 
   Student({
     this.id,
@@ -11,6 +13,8 @@ class Student {
     required this.lastName,
     required this.studentId,
     required this.password,
+    this.email,
+    this.phone,
   });
 
   Map<String, dynamic> toMap() {
@@ -19,6 +23,8 @@ class Student {
       'lastName': lastName,
       'studentId': studentId,
       'password': password,
+      'email': email,
+      'phone': phone,
     };
     if (id != null) {
       map['id'] = id;
@@ -33,6 +39,8 @@ class Student {
       lastName: map['lastName'] as String,
       studentId: map['studentId'] as String,
       password: map['password'] as String,
+      email: map['email'] as String?,
+      phone: map['phone'] as String?,
     );
   }
 }
